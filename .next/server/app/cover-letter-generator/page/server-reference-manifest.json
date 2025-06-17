@@ -1,0 +1,16 @@
+{
+  "node": {
+    "40f372c1fe9eedff0841093b4d48fe9cebf3228f3a": {
+      "workers": {
+        "app/cover-letter-generator/page": {
+          "moduleId": "[project]/.next-internal/server/app/cover-letter-generator/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/ai/flows/generate-cover-letter.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/cover-letter-generator/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}
