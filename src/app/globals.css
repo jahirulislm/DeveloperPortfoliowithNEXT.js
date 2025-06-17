@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 29% 95%; /* Light gray #F0F2F5 */
+    --foreground: 240 6% 10%; /* Default dark text */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 240 6% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 6% 10%;
+
+    --primary: 231 48% 48%; /* Deep Indigo #3F51B5 */
+    --primary-foreground: 0 0% 98%; /* Light text for primary bg */
+
+    --secondary: 220 13% 91%; /* Lighter gray */
+    --secondary-foreground: 240 6% 10%;
+
+    --muted: 220 13% 91%;
+    --muted-foreground: 240 4% 46%; /* Muted text */
+
+    --accent: 188 70% 71%; /* Soft Cyan #80DEEA */
+    --accent-foreground: 240 6% 10%; /* Dark text for accent bg */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 88%; /* Slightly darker gray for borders */
+    --input: 220 13% 88%;
+    --ring: 231 48% 48%; /* Primary color for rings */
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 240 6% 10%;
+    --sidebar-primary: 231 48% 48%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 188 70% 71%;
+    --sidebar-accent-foreground: 240 6% 10%;
+    --sidebar-border: 220 13% 88%;
+    --sidebar-ring: 231 48% 48%;
+
+    --chart-1: 231 48% 48%;
+    --chart-2: 188 70% 71%;
+    --chart-3: 220 13% 60%;
+    --chart-4: 231 48% 68%;
+    --chart-5: 188 70% 81%;
+  }
+
+  .dark {
+    --background: 240 6% 10%; /* Dark gray for dark mode */
+    --foreground: 0 0% 98%; /* Light text */
+
+    --card: 240 5% 15%; /* Darker card */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 5% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 231 48% 58%; /* Lighter Indigo for dark mode */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4% 20%; /* Darker secondary */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 4% 20%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 188 70% 61%; /* Slightly desaturated Cyan for dark mode */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 4% 25%;
+    --input: 240 4% 25%;
+    --ring: 231 48% 58%;
+
+    --sidebar-background: 240 5% 15%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 231 48% 58%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 188 70% 61%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 4% 25%;
+    --sidebar-ring: 231 48% 58%;
+
+    --chart-1: 231 48% 58%;
+    --chart-2: 188 70% 61%;
+    --chart-3: 240 4% 35%;
+    --chart-4: 231 48% 40%;
+    --chart-5: 188 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
